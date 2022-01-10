@@ -136,8 +136,8 @@ namespace DbAppConsole
         private static async Task QueryDatabaseCRUDE()
         {
             using (var db = new SeidoDbContext(_optionsBuilder.Options))
-            using (var _repo = new CustomerRepository(db))
             {
+                var _repo = new CustomerRepository(db);
                 Console.WriteLine("\n\nQuery Database CRUDE");
                 Console.WriteLine("--------------------");
 

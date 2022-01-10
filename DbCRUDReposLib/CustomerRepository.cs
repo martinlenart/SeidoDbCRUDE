@@ -58,7 +58,5 @@ namespace DbCRUDReposLib
         {
             _db = db; 
         }
-
-        public void Dispose() { }
     }
 }

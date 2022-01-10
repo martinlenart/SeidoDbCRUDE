@@ -8,7 +8,7 @@ using DbModelsLib;
 
 namespace DbCRUDReposLib
 {
-    public interface ICustomerRepository : IDisposable
+    public interface ICustomerRepository
     {
         //Using a fluent syntax when possible
         Task<Customer> CreateAsync(Customer cust);
