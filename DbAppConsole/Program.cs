@@ -48,8 +48,7 @@ namespace DbAppConsole
                 Console.WriteLine($"Connection string to Database: {connectionString}");
             else
             {
-                Console.WriteLine($"Please copy the 'DbConnections.json' to this location");
-                return;
+               throw new Exception("No DbConnection string found");
             }
             #endregion
 
